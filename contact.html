@@ -276,28 +276,9 @@
 
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget">
-                            <div class="widget-title">
-                                <h5>QUICK LINK</h5>
-                            </div>
-                            <nav class="widget-nav">
-                                <ul>
-                                    <li><a href="#">Purchase</a></li>
-                                    <li><a href="#">FAQs</a></li>
-                                    <li><a href="#">Payment</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Return</a></li>
-                                    <li><a href="#">Advertise</a></li>
-                                    <li><a href="#">Shipping</a></li>
-                                    <li><a href="#">Career</a></li>
-                                    <li><a href="#">Orders</a></li>
-                                    <li><a href="#">Policities</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                       
                     </div>
 
-                    <!-- Single Footer Widget -->
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget">
@@ -312,7 +293,7 @@
                                 </div>
                                 <div class="product-info">
                                     <a href="iot.html">IoT device</a>
-                                    <p> <strike>&#8377; 3499</strike> &#8377; 2499/-</p>
+                                    <p> <strike>&#8377; 1199</strike> &#8377; 9999/-</p>
                                 </div>
                             </div>
 
@@ -360,7 +341,7 @@
                     <div class="col-12 col-md-6">
                         <div class="copywrite-text">
                             <p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
 
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
@@ -372,9 +353,9 @@
                             <nav>
                                 <ul>
                                     <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Service</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -386,6 +367,7 @@
     <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Files ##### -->
+     
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
@@ -396,6 +378,29 @@
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script src="/js/gsap.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".testimonials-slides").owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 1 },
+                    1000: { items: 1 }
+                }
+            });
+        });
+    </script>
+        
+    
+        <div id="chatbot">
+            <img src="img/bg-img/chatbot.jpg" alt="Chatbot" />
+        </div>
+        
 </body>
 
 </html>
