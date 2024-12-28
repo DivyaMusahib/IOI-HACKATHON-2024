@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>किसान मित्र</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        /* body {
+            background-color: rgb(234, 170, 170);
+        } */
+        /* .cardkaimg{
+            height: 200px;
+            width: 200px;
+        } */
+        .cont {
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card {
+            width: 100%;
+            border: none;
+        }
+        .card:hover {
+            box-shadow: 5px 5px 5px rgb(212, 212, 211);
+            z-index: 2;
+            transform: scale(1.2);
+        }
+        .card-body {
+            text-align: center;
+        }
+    </style>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img">
+            <img src="img/core-img/leaf.png" alt="">
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- ***** Top Header Area ***** -->
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-header-content d-flex align-items-center justify-content-between">
+                            <!-- Top Header Content -->
+                            <div class="top-header-meta">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="kisaanmitra@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>ईमेल: kisaanmitra@gmail.com</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+91 1800 890 981"><i class="fa fa-phone" aria-hidden="true"></i> <span>कॉल करें: +91 1800 890 981</span></a>
+                            </div>
+
+                            <!-- Top Header Content -->
+                            <div class="top-header-meta d-flex">
+                                <!-- Language Dropdown -->
+                                <div class="language-dropdown">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">भाषा</button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#" >हिंदी</a>
+                                            <a class="dropdown-item" href="index.html" >English</a>
+                                            <a class="dropdown-item" href="#" >आगामी...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            
+                                <!-- Login -->
+                                <div class="login">
+                                    <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i> <span>Login</span></a>
+                                </div>
+                                <!-- Cart -->
+                                <div class="cart">
+                                    <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Navbar Area ***** -->
+        <div class="alazea-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
+
+                        <!-- Nav Brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.svg" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Navbar Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">घर</a></li>
+                                    <li><a href="about.html">बारे में</a></li>
+                                    <li><a href="shop.html">दुकान</a></li>
+                                    <li><a href="contact.html">संपर्क करें</a></li>
+                                </ul>
+
+                                <!-- Search Icon -->
+                                <div id="searchIcon">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                            <!-- Navbar End -->
+                        </div>
+                    </nav>
+
+                    <!-- Search Form -->
+                    <div class="search-form">
+                        <form action="#" method="get">
+                            <input type="search" name="search" id="search" placeholder="Type keywords &amp; press enter...">
+                            <button type="submit" class="d-none"></button>
+                        </form>
+                        <!-- Close Icon -->
+                        <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-post-slides owl-carousel">
+
+            <!-- Single Hero Post -->
+            <div class="single-hero-post bg-overlay">
+                <!-- Post Image -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/1.jpg);"></div>
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center" >
+                        <div class="col-12">
+                            <!-- Post Content -->
+                            <div class="hero-slides-content text-center" style="margin: -200px;">
+                                <h2 class="animate-text">चलो हमारे खेत को स्वस्थ, समृद्ध और <br> फसल को बेहतर बनाते हैं</h2>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p> -->
+                                <div class="welcome-btn-group">
+                                    <a href="#" class="btn alazea-btn mr-30" style="background-color: #4570C7; border: none;">शुरू हो जाओ</a>
+                                    <a href="#" class="btn alazea-btn active" style="background-color: #C74570; color: white; border: none;">संपर्क करें</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- jblibvijfd;sabv;uibsfdvb;kdjfvb;ifsbjvlisd -->
+                </div>
+            </div>
+            
+            <!-- Single Hero Post -->
+            <div class="single-hero-post bg-overlay">
+                <!-- Post Image -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/2.jpg);"></div>
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <!-- Post Content -->
+                            <div class="hero-slides-content text-center" style="margin: -200px;">
+                                <h2 class="animate-text">चलो हमारे खेत को स्वस्थ, समृद्ध और <br> फसल को बेहतर बनाते हैं</h2>
+                                <!-- <h2>Plants exist in the weather and light rays that surround them</h2> -->
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p> -->
+                                <div class="welcome-btn-group">
+                                    <a href="#" class="btn alazea-btn mr-30" style="background-color: #4570C7; border: none;">शुरू हो जाओ</a>
+                                    <a href="#" class="btn alazea-btn active" style="background-color: #C74570; color: white; border: none;">संपर्क करें</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Service Area Start ##### -->
+    <section class="our-services-area bg-gray section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2 class="animate-text"><b>हमारे उत्पाद और सेवाएँ</b></h2>
+                        <p class="animate-text">हम आपके लिए सही सेवा प्रदान करते हैं।</p>
+                    </div>
+                </div>
+            </div>
+
+<div class="row align-items-center justify-content-between">
+            <div class="col-12 col-lg-5">
+                <div class="alazea-service-area mb-100">
+
+                    <!-- Single Service Area -->
+                    <div class="single-service-area d-flex align-items-center">
+                        <!-- Icon -->
+                        <div class="service-icon mr-30">
+                            <img class="animate-text" src="img/core-img/s1.png" alt="">
+                        </div>
+                        <!-- Content -->
+                        <div class="service-content">
+                            <h5 class="animate-text">मिट्टी स्वास्थ्य प्रबंधन</h5>
+                            <p class="animate-text">हम मृदा स्वास्थ्य के बारे में सटीक जानकारी प्रदान करने के लिए मृदा नमूनों का विश्लेषण करते हैं, जिससे आपको पोषक तत्वों को अनुकूलित करने और फसल उत्पादकता में सुधार करने में मदद मिलती है।</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Service Area -->
+                    <div class="single-service-area d-flex align-items-center">
+                        <!-- Icon -->
+                        <div  class="service-icon mr-30">
+                            <img class="animate-text" src="img/core-img/s2.png" alt="">
+                        </div>
+                        <!-- Content -->
+                        <div class="service-content">
+                            <h5 class="animate-text">स्वचालित सिंचाई</h5>
+                            <p class="animate-text">
+                                हमारी सौर ऊर्जा चालित स्वचालित सिंचाई प्रणाली भूमि क्षेत्र, मिट्टी की स्थिति, फसल के प्रकार और मौसम के आधार पर पानी को समायोजित करती है, जिससे इष्टतम फसल विकास के लिए कुशल और टिकाऊ जल उपयोग सुनिश्चित होता है।</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Service Area -->
+                    <div class="single-service-area d-flex align-items-center">
+                        <!-- Icon -->
+                        <div class="service-icon mr-30">
+                            <img class="animate-text" src="img/core-img/s3.png" alt="">
+                        </div>
+                        <!-- Content -->
+                        <div class="service-content">
+                            <h5 class="animate-text">जलवायु-स्मार्ट खेती और फसल विविधीकरण सिफारिशें</h5>
+                            <p class="animate-text">हमारा मंच मौसम के पैटर्न, मिट्टी के प्रकार, वर्तमान बाजार मूल्यों और मांग के अनुरूप जलवायु-स्मार्ट खेती और फसल विविधीकरण की सिफारिशें प्रदान करता है, जिससे आपको अधिकतम लाभप्रदता और स्थिरता के लिए सूचित निर्णय लेने में मदद मिलती है।</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="alazea-video-area bg-overlay mb-100">
+                        <img src="img/bg-img/23.jpg" alt="">
+                        <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Service Area End ##### -->
+
+    <div class="container my-5" >
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+            <!-- Card 1 (Women) -->
+            <div class="col" >
+                <div style="background-color: #f2f4f5;" class="card m-4 p-2" >
+                    <img class = "cardkaimg" src="img\bg-img\soil-test.jpg" class="card-img-top" alt="Soil-test-img">
+                    <div class="card-body">
+                        <h2 class="card-title">मिट्टी परीक्षण</h2>
+                        <p class="card-title">अपनी मिट्टी के स्वास्थ्य पर विस्तृत रिपोर्ट और विशेषज्ञ मार्गदर्शन प्राप्त करें ताकि यह सुनिश्चित हो सके कि आपकी फसलें फलें-फूलें और रोग-मुक्त रहें। <br> </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="subscription.html">
+                            <button class="btn btn-primary w-100" style="background-color: #4570C7;">Explore Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <!-- Card 2 (Kids) -->
+            <div class="col">
+                <div style="background-color: #f2f4f5;" class="card m-4 p-2" >
+                    <img class = "cardkaimg" src="img\bg-img\iot-1.png" class="card-img-top" alt="IoT Device">
+                    <div class="card-body">
+                        <br>
+                        <h2 class="card-title">IoT डिवाइस</h2>
+                        <p class="card-title">हमारे IoT डिवाइस के साथ सिंचाई को अनुकूलित करें जो मौसम, फसल के प्रकार और मिट्टी की गुणवत्ता की निगरानी करता है।</p>
+                        <br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="iot.html">
+                            <button class="btn btn-primary w-100" style="background-color: #4570C7;">Explore Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 3 (Men) -->
+            <div class="col">
+                <div style="background-color: #f2f4f5;" class="card m-4 p-2" >
+                    <img class = "cardkaimg" src="img\bg-img\leaf.png" class="card-img-top" alt="leaf-Scanner">
+                    <div class="card-body">
+                        <h2 class="card-title">फसल-स्कैनर</h2>
+                        <p class="card-title">उन्नत छवि पहचान का उपयोग करते हुए, हमारा सिस्टम पत्तियों की छवियों का विश्लेषण करता है ताकि संभावित फसल रोगों का पता लगाया जा सके।</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="subscription.html">
+                            <button class="btn btn-primary w-100" style="background-color: #4570C7;">Explore Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ##### Product Area Start ##### -->
+    <section class="new-arrivals-products-area bg-gray section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2 class="animate-text">बीज और उर्वरक खरीदें</h2>
+                        <p class="animate-text">हमारे पास नवीनतम उत्पाद हैं, यह आपके लिए रोमांचक होना चाहिए।</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Single Product Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <a href="shop-details.html"><img class="animate-text" src="img/bg-img/9.jpg" alt=""></a>
+                            <!-- Product Tag -->
+                            <div class="product-tag">
+                                <a href="#">Hot</a>
+                            </div>
+                            <div class="product-meta d-flex">
+                                <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
+                                <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
+                                <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                            </div>
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info mt-15 text-center">
+                            <a href="shop-details.html">
+                                <p class="animate-text">मोती के बीज</p>
+                            </a>
+                            <h6 class="animate-text">₹299/-</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Product Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="200ms">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <a href="shop-details.html"><img class="animate-text" src="img/bg-img/10.jpg" alt=""></a>
+                            <div class="product-meta d-flex">
+                                <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
+                                <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
+                                <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                            </div>
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info mt-15 text-center">
+                            <a href="shop-details.html">
+                                <p class="animate-text" >रागी के बीज</p>
+                            </a>
+                            <h6 class="animate-text"><strike>₹399</strike> ₹249/- </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Product Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <a href="shop-details.html"><img class="animate-text" src="img/bg-img/11.jpg" alt=""></a>
+                            <div class="product-meta d-flex">
+                                <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
+                                <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
+                                <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                            </div>
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info mt-15 text-center">
+                            <a href="shop-details.html">
+                                <p class="animate-text">बाजरे के बीज</p>
+                            </a>
+                            <h6 class="animate-text"><strike>₹249</strike> ₹199/- </h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Product Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="400ms">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <a href="shop-details.html"><img class="animate-text" src="img/bg-img/12.jpg" alt=""></a>
+                            <!-- Product Tag -->
+                            <div class="product-tag sale-tag">
+                                <a href="#">Hot</a>
+                            </div>
+                            <div class="product-meta d-flex">
+                                <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
+                                <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
+                                <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                            </div>
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info mt-15 text-center">
+                            <a href="shop-details.html">
+                                <p class="animate-text">हाइब्रिड चेरी टमाटर बीज</p>
+                            </a>
+                            <h6 class="animate-text" >₹209</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 text-center">
+                    <a href="shop.html" class="btn alazea-btn">सभी को देखें</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### Product Area End ##### -->
+
+    
+    <!-- ##### Testimonial Area Start ##### -->
+   <!-- ##### Testimonial Area Start ##### -->
+    <section class="testimonial-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonials-slides owl-carousel">
+                        <!-- Single Testimonial Slide -->
+                        <div class="single-testimonial-slide d-flex align-items-center">
+                            <!-- Circular Photo on Left -->
+                            <div class="testimonial-thumb" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+                                <img src="img/bg-img/13.jpg" alt="Testimonial Image" class="testimonial-img">
+                            </div>
+                            <!-- Content on Right -->
+                            <div class="testimonial-content" style="flex: 2; padding-left: 20px;">
+                                <div class="section-heading">
+                                    <h2 class="animate-text"><b>गुणों का वर्ण-पत्र</b></h2>
+                                    <p>कुछ शब्द किसानों से किसान मित्र के बारे में</p>
+                                </div>
+                                <p>
+                                    किसान मित्र होना एक खुशी है। उनके विचार रचनात्मक हैं और उनके समाधान ने मुझे इस वर्ष अपनी फसल को 2x दक्षता से बढ़ाने में मदद की।
+                                </p>
+                                <div class="testimonial-author-info">
+                                    <h6>श्री श्यामदास चौबे</h6>
+                                    <p><b>हरियाणा का किसान</b></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Repeat for Other Testimonials -->
+                        <div class="single-testimonial-slide d-flex align-items-center">
+                            <div class="testimonial-thumb" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+                                <img src="img/bg-img/14.jpg" alt="Testimonial Image" class="testimonial-img">
+                            </div>
+                            <div class="testimonial-content" style="flex: 2; padding-left: 20px;">
+                                <div class="section-heading">
+                                    <h2 class="animate-text"><b>गुणों का वर्ण-पत्र</b></h2>
+                                    <p>कुछ शब्द किसानों से किसान मित्र के बारे में</p>
+                                </div>
+                                <p>
+                                    किसान मित्र की मदद से मैं अपनी फसलों की रक्षा करने में सक्षम था, जिससे मुझे बड़े नुकसान से बचने में मदद मिली।
+                                </p>
+                                <div class="testimonial-author-info">
+                                    <h6>श्री नज़रुल इस्लाम</h6>
+                                    <p><b>उत्तर प्रदेश के किसान</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Repeat for Other Testimonials -->
+                        <div class="single-testimonial-slide d-flex align-items-center">
+                            <div class="testimonial-thumb" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+                                <img src="img/bg-img/15.jpg" alt="Testimonial Image" class="testimonial-img">
+                            </div>
+                            <div class="testimonial-content" style="flex: 2; padding-left: 20px;">
+                                <div class="section-heading">
+                                    <h2 class="animate-text"><b>गुणों का वर्ण-पत्र</b></h2>
+                                    <p>कुछ शब्द किसानों से किसान मित्र के बारे में</p>
+                                </div>
+                                <p>
+                                    किसान मित्र IoT डिवाइस ने मुझे समय पर और मौसम के अनुसार सिंचाई करने में मदद की।
+                                </p>
+                                <div class="testimonial-author-info">
+                                    <h6>श्री सुखप्रीत सिंह</h6>
+                                    <p><b>पंजाब का किसान</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Testimonial Area End ##### -->
+
+    <!-- ##### Blog Area Start ##### -->
+    <section class="alazea-blog-area section-padding-100-0" style="background-color: #f2f4f5;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2>ताजा खबर</h2>
+                        <p>बागवानी और घर के पौधों के बारे में ताज़ा खबर</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <!-- Single Blog Post Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-blog-post mb-100">
+                        <div class="post-thumbnail mb-30">
+                            <a href="single-post.html"><img src="img/bg-img/6.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <a href="single-post.html" class="post-title">
+                                <h5>
+                                    देश भर के उद्यान डिजाइनर 2024 में बागवानी की दुनिया को आकार देने वाले विचारों का पूर्वानुमान लगा रहे हैं                                </h5>
+                            </a>
+                            <div class="post-meta">
+                                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2024</a>
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Alan Jackson</a>
+                            </div>
+                            <p class="post-excerpt">पूर्णांक लेक्टस डायम एसी स्केरिस्क कंसेटेचर। विमस ओटावास नेक लैकस सिट अमेट। एनियन इंटरडस मिड विटे।</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Post Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-blog-post mb-100">
+                        <div class="post-thumbnail mb-30">
+                            <a href="single-post.html"><img src="img/bg-img/7.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <a href="single-post.html" class="post-title">
+                                <h5>2024 मिडवेस्ट ट्री एंड श्रब कॉन्फ्रेंस: स्थायी परिदृश्य के लिए लचीले पौधे</h5>
+                            </a>
+                            <div class="post-meta">
+                                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2024</a>
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Christina Aguilera</a>
+                            </div>
+                            <p class="post-excerpt">पूर्णांक लेक्टस डायम एसी स्केरिस्क कंसेटेचर। विमस ओटावास नेक लैकस सिट अमेट। एनियन इंटरडस मिड विटे।</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Post Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-blog-post mb-100">
+                        <div class="post-thumbnail mb-30">
+                            <a href="single-post.html"><img src="img/bg-img/8.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <a href="single-post.html" class="post-title">
+                                <h5>गर्मियाँ आ रही हैं, यह हमारे और फूलों दोनों के लिए धूप का आनंद लेने का समय है</h5>
+                            </a>
+                            <div class="post-meta">
+                                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 19 Jun 2024</a>
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Mason Jenkins</a>
+                            </div>
+                            <p class="post-excerpt">पूर्णांक लेक्टस डायम एसी स्केरिस्क कंसेटेचर। विमस ओटावास नेक लैकस सिट अमेट। एनियन इंटरडस मिड विटे।</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### Blog Area End ##### -->
+
+    
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area section-padding-100-0">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-5">
+                    <!-- Section Heading -->
+                    <div class="section-heading">
+                        <h2>संपर्क में रहो</h2>
+                        <p>हमें संदेश भेजें, हम बाद में कॉल करेंगे</p>
+                    </div>
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area mb-100">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="contact-name" placeholder="आपका नाम">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="contact-email" placeholder="आपका ईमेल">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="contact-subject" placeholder="विषय">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="संदेश"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn alazea-btn mt-15">मेसेज भेजें</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <!-- Google Maps -->
+                    <div class="map-area mb-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30767694.118830837!2d60.92944751922805!3d19.720199483373122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1735337558562!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area bg-img" style="background-image: url(img/bg-img/3.jpg);">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="footer-logo mb-30">
+                                <a href="#"><img src="img/core-img/logo.svg" alt=""></a>
+                            </div>
+                            <div class="social-info">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                       
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h5>सर्वश्रेष्ठ विक्रेता</h5>
+                            </div>
+
+                            <!-- Single Best Seller Products -->
+                            <div class="single-best-seller-product d-flex align-items-center">
+                                <div class="product-thumbnail">
+                                    <a href="iot.html"><img src="img/bg-img/iot.png" alt=""></a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="iot.html">IoT डिवाइस</a>
+                                    <p> <strike>&#8377; 1199</strike> &#8377; 9999/-</p>
+                                </div>
+                            </div>
+
+                            <!-- Single Best Seller Products -->
+                            <div class="single-best-seller-product d-flex align-items-center">
+                                <div class="product-thumbnail">
+                                    <a href="shop-detail-raagi.html"><img src="img/bg-img/40.png" alt=""></a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="shop-detail-raagi.html">रागी के बीज</a>
+                                    <p>&#8377; 249/-</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h5>संपर्क</h5>
+                            </div>
+
+                            <div class="contact-information">
+                                <p><span>पता:</span> व्हाइटफील्ड, बैंगलोर</p>
+                                <p><span>फ़ोन:</span> +91 1800 890 981</p>
+                                <p><span>ईमेल:</span> kisaanmitra@gmail.com</p>
+                                <p><span>खुले रहने का समय:</span> सोमवार - रविवार: सुबह 8 बजे से रात 9 बजे तक</p>
+                                <p><span>शुभ घंटे:</span>शनिवार: दोपहर 2 बजे से शाम 4 बजे तक</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="border-line"></div>
+                    </div>
+                    <!-- Copywrite Text -->
+                    <div class="col-12 col-md-6">
+                        <div class="copywrite-text">
+                            <p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                        </div>
+                    </div>
+                    <!-- Footer Nav -->
+                    <div class="col-12 col-md-6">
+                        <div class="footer-nav">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">घर</a></li>
+                                    <li><a href="about.html">के बारे में</a></li>
+                                    <li><a href="shop.html">दुकान</a></li>
+                                    <li><a href="contact.html">संपर्क</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+     
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <script src="/js/gsap.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".testimonials-slides").owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 1 },
+                    1000: { items: 1 }
+                }
+            });
+        });
+    </script>
+        
+    
+        <div id="chatbot">
+            <img src="img/bg-img/chatbot.jpg" alt="Chatbot" />
+        </div>
+        
+</body>
+
+</html>
