@@ -40,10 +40,10 @@ The global smart agriculture market is expected to grow from **$16.2 billion in 
 ---
 
 ## 💰 Revenue Model
-1. **IoT Device**: ₹2999 per unit (₹999 subscription annually).
-2. **Customized Pesticides**: ₹499 per unit.
-3. **Fertilizers**: ₹999 per unit.
-4. **Seeds**: ₹9999 per premium package.
+1. **IoT Device**: ₹9999 per unit (₹999 subscription annually).
+2. **Customized Pesticides**
+3. **Fertilizers**
+4. **Seeds**
 
 ---
 
@@ -67,6 +67,6 @@ https://www.figma.com/proto/YVEnFMZ7vS31gx541e6Xbw/Agrictech?page-id=49%3A2&node
 ---
 
 ## 📞 Contact Us
-- Email: kisaanmitraioi@vercel.app
-- Website: [kisaanmitra.com](https://kisaanmitra.com)
+- Email: kisaanmitraioi@gmail.com
+- Website: [kisaanmitraioi.vercel.app](https://kisaanmitraioi@vercel.app)
 
